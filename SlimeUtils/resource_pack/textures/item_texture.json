@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"slime_sling": {
+			"textures": "textures/items/slime_sling"
+		},
+		"slime_boots": {
+			"textures": "textures/items/slime_boots"
+		}
+	}
+}

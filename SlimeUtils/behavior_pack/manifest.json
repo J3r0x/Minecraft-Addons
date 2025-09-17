@@ -1,0 +1,48 @@
+{
+	"format_version": 2,
+	"header": {
+	"name": "Slime Utils",
+	"description": "Slime Utils Behavior Pack",
+		"uuid": "463d5aa8-24fd-e9d8-956d-458a860250c1",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 21, 0]
+	},
+	"metadata": {
+		"authors": ["TheRetr0"],
+		"generated_with": {
+			"blockbench_item_wizard": ["1.2.1"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "6f501878-fbfb-ff8c-1283-9f06f2869090",
+			"type": "data"
+		},
+		{
+			"uuid": "7b5e2a1c-3d4f-5e6a-b7c8-9d0e1f2a3b4c",
+			"version": [1, 0, 0],
+			"type": "script",
+			"language": "javascript",
+			"entry": "scripts/main.js"
+		}
+	],
+	"capabilities": [
+		"script_eval"
+	],
+	"dependencies": [
+		{
+			"uuid": "58f8df64-3705-a9a3-5391-0fefd541231d",
+			"version": [1, 0, 0]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.1.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.0.0"
+		}
+	]
+}

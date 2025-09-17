@@ -1,0 +1,189 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "slime_pack:slime_golem",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/slime_golem"
+      },
+      "geometry": {
+        "default": "geometry.slime_golem"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.slime_golem.move",
+        "attack": "animation.slime_golem.attack"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.slime_golem.move"
+        }
+      ],
+      "render_controllers": [ "controller.render.slime_golem" ],
+      "spawn_egg": {
+        "base_color": "#52a03e",
+        "overlay_color": "#7dc36b"
+      }
+    }
+  }
+}
+    "component_groups": {
+      "slime_golem_angry": {
+        "minecraft:angry": {
+          "duration": 25,
+          "broadcastAnger": true,
+          "broadcastRange": 20,
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
+        },
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        }
+      },
+      "slime_golem_calm": {
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["slime_golem", "mob"]
+      },
+      "minecraft:collision_box": {
+        "width": 1.2,
+        "height": 2.8
+      },
+      "minecraft:health": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": false,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 1.25
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 2
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "within_radius": 25.0,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "is_family", "subject": "other", "value": "iron_golem" }
+              ]
+            },
+            "max_dist": 25
+          }
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 4,
+        "speed_multiplier": 1.2,
+        "reach_multiplier": 2.0
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 8,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 9,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 10
+      },
+      "minecraft:attack": {
+        "damage": 7
+      },
+      "minecraft:follow_range": {
+        "value": 35
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 7,
+          "use_motion_prediction_hints": true
+        }
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:nameable": {},
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["slime_golem_calm"]
+        }
+      },
+      "minecraft:become_angry": {
+        "remove": {
+          "component_groups": ["slime_golem_calm"]
+        },
+        "add": {
+          "component_groups": ["slime_golem_angry"]
+        }
+      },
+      "minecraft:on_calm": {
+        "remove": {
+          "component_groups": ["slime_golem_angry"]
+        },
+        "add": {
+          "component_groups": ["slime_golem_calm"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+item.jrx:slime_sling.name=Slime Sling
+item.jrx:slime_boots.name=Slime Boots
+entity.jrx:slimegolem.name=Slime Golem
+item.spawn_egg.entity.jrx:slimegolem.name=Slime Golem Spawn Egg

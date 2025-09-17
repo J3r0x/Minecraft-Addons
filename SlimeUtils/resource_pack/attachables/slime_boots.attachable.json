@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "jrx:slime_boots",
+			"render_controllers": ["controller.render.slime_boots"],
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/attachable/slime_boots"
+			},
+			"geometry": {
+				"default": "geometry.slime_boots"
+			}
+		}
+	}
+}

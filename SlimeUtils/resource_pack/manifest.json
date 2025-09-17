@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"header": {
+	"name": "Slime Utils",
+	"description": "Slime Utils Resource Pack",
+		"uuid": "58f8df64-3705-a9a3-5391-0fefd541231d",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 21, 0]
+	},
+	"metadata": {
+		"authors": ["TheRetr0"],
+		"generated_with": {
+			"blockbench_item_wizard": ["1.2.1"]
+		}
+	},
+	"modules": [
+		{
+		"description": "Slime Utils",
+			"type": "resources",
+			"uuid": "8e0bf0e9-c96b-c57d-9c07-6ae72f3c0d84",
+			"version": [1, 0, 0]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "463d5aa8-24fd-e9d8-956d-458a860250c1",
+			"version": [1, 0, 0]
+		}
+	]
+}
