@@ -1,0 +1,36 @@
+{
+    "format_version":  "1.21.10",
+    "minecraft:recipe_shaped":  {
+                                    "description":  {
+                                                        "identifier":  "jrx:miners_hammer"
+                                                    },
+                                    "tags":  [
+                                                 "crafting_table"
+                                             ],
+                                    "pattern":  [
+                                                    "DND",
+                                                    " S ",
+                                                    "DSD"
+                                                ],
+                                    "key":  {
+                                                "D":  {
+                                                          "item":  "minecraft:diamond"
+                                                      },
+                                                "S":  {
+                                                          "item":  "minecraft:stick"
+                                                      },
+                                                "N":  {
+                                                          "item":  "minecraft:netherite_ingot"
+                                                      }
+                                            },
+                                    "unlock":  [
+                                                   {
+                                                       "item":  "minecraft:netherite_ingot"
+                                                   }
+                                               ],
+                                    "result":  {
+                                                   "count":  1,
+                                                   "item":  "jrx:miners_hammer"
+                                               }
+                                }
+}

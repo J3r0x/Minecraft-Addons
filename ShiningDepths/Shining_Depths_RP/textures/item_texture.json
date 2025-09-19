@@ -1,0 +1,10 @@
+{
+	"texture_data": {
+		"miners_hammer": {
+			"textures": "textures/items/miners_hammer.png"
+		},
+		"iron_miner_helmet": {
+			"textures": "textures/items/iron_miner_helmet.png"
+		}
+	}
+}

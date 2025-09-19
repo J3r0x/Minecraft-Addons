@@ -1,0 +1,29 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.miners_hammer",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{"origin": [-1.25, -1, -0.75], "size": [2, 19, 2], "uv": [0, 23]},
+						{"origin": [-3.5, 12, -4], "size": [7, 5, 8], "uv": [0, 0]},
+						{"origin": [-1.75, -5, -1.25], "size": [3, 4, 3], "uv": [8, 23]},
+						{"origin": [-4, 10.5, 4], "size": [8, 8, 2], "uv": [0, 13]},
+						{"origin": [-4, 10.5, -6], "size": [8, 8, 2], "uv": [20, 13]}
+					]
+				}
+			]
+		}
+	]
+}

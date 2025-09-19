@@ -1,0 +1,46 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Shining Depths",
+		"description": "Shining Depths Behavior Pack",
+		"uuid": "ea463435-f4f3-ca57-3bcc-e271b2ad17cd",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 21, 0]
+	},
+	"metadata": {
+		"authors": ["Ikar0"],
+		"generated_with": {
+			"blockbench_item_wizard": ["1.2.1"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "152b14a8-6521-51b7-08aa-7e7895d62efa",
+			"type": "data"
+		},
+		{
+			"uuid": "5963a856-74d3-489c-8734-409398e0f220",
+			"version": [1, 0, 0],
+			"type": "script",
+			"language": "javascript",
+			"entry": "scripts/main.js"
+		}
+	],
+	"capabilities": ["script_eval"],
+	"dependencies": [
+		{
+			"uuid": "66a30bfb-19f9-c080-9727-2d3272788ffc",
+			"version": [1, 0, 0]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.1.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.0.0"
+		}
+	]
+}

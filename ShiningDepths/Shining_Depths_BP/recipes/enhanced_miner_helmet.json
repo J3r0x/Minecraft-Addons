@@ -1,0 +1,31 @@
+{
+    "format_version":  "1.21.10",
+    "minecraft:recipe_shapeless":  {
+                                       "description":  {
+                                                           "identifier":  "jrx:enhanced_miner_helmet"
+                                                       },
+                                       "tags":  [
+                                                    "crafting_table"
+                                                ],
+                                       "ingredients":  [
+                                                           {
+                                                               "item":  "minecraft:torch"
+                                                           },
+                                                           {
+                                                               "item":  "minecraft:glowstone"
+                                                           },
+                                                           {
+                                                               "item":  "minecraft:iron_helmet"
+                                                           }
+                                                       ],
+                                       "unlock":  [
+                                                      {
+                                                          "item":  "minecraft:iron_helmet"
+                                                      }
+                                                  ],
+                                       "result":  {
+                                                      "count":  1,
+                                                      "item":  "jrx:iron_miner_helmet"
+                                                  }
+                                   }
+}
