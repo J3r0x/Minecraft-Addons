@@ -21,14 +21,14 @@ Slime Utils is a Minecraft Bedrock addon that introduces slime-themed gear, util
 
 ---
 
-###  Shining Depths *(in development)*
+###  Shining Depths
 Shining Depths is a Minecraft Bedrock addon focused on underground exploration and mining utilities.  
 It aims to expand the caving experience with new tools, lighting mechanics, and unique miner-themed companions.
 
-#### Planned Features
+#### Features
 - **Dynamic Lights** – Illuminate caves naturally when holding torches or lanterns.  
 - **Miner’s Gear** – Specialized helmets and tools for safer, faster caving.  
-- **Companion Pet** – A loyal miner’s friend to aid in your underground journeys.  
 - **Immersive Exploration** – Enhance cave diving with atmospheric depth and useful mechanics.  
 
-*Currently under development – stay tuned for updates!*
+[**Download on CurseForge**](https://www.curseforge.com/minecraft-bedrock/addons/shining-depths)
+
